@@ -63,4 +63,32 @@ body{
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   white-space: pre-wrap;
 }
+.side-pic {
+  width: 30vw;
+  max-width: 120px;
+  border-radius: 15px;
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.side-pic.visible {
+  opacity: 0.85;
+}
+
+.hidden {
+  display: block; 
+  opacity: 0;
+}
+
 
