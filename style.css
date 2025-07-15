@@ -74,21 +74,26 @@ body{
   transition: opacity 2s ease;
 }
 
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-
 .side-pic.visible {
   opacity: 0.85;
 }
 
 .hidden {
-  display: block; 
+  display: block;
   opacity: 0;
 }
+@media (max-width: 600px) {
+  .side-pic {
+    width: 70vw;
+    max-width: 250px;
+    position: static;
+    margin: 15px auto 25px auto; 
+    display: block;
+    z-index: 0;
+    opacity: 0; 
+    transition: opacity 2s ease;
+  }
+}
+
 
 
