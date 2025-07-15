@@ -16,6 +16,8 @@ document.getElementById("btn2").onclick= function(){
    music.play();
     document.getElementById("pr2").textContent="i love you moreeeee";
     document.getElementById("about-her").style.display = "block";
+    document.getElementById("pic1").classList.add("visible");
+    document.getElementById("pic2").classList.add("visible");
 
     
 }//sad
