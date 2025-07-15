@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    background:linear-gradient(135deg,#ffdce0,#f3c0f9);
+    min-height: 100vh;
+    padding-top: 50px;
+}
+#label1{
+    font-size: 2em;
+}
+#btn,#btn2{  
+    padding: 10px 25px;
+  border-radius: 25px;
+  background-color: #ff6aa5;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#btn:hover, #btn2:hover {
+  background-color: #e44b8b;
+  transform: scale(1.05);
+}
+#pr, #pr2 {
+  font-size: 2rem;
+  color: #b4004e;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px white;
+}
+#heart {
+  font-size: 6rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#heart.show {
+  opacity: 1;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+#about-her {
+  display: none;
+  background: #67b757;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 90%;
+  width: 600px;
+  color: #4f53d3;
+  font-family: 'Courier New', monospace;
+  font-size: 1.3em;
+  line-height: 1.9em;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  white-space: pre-wrap;
+}
+
